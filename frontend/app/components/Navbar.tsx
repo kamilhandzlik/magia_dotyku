@@ -29,7 +29,7 @@ export default function Navbar() {
           {/* MD - logo po lewej */}
           <div className="hidden md:block xl:hidden ml-6">
             <Link href="/">
-              <Image src="/logo_2.png" alt="Logo" width={140} height={34} />
+              <Image src="/logo_2.png" alt="Logo" width={100} height={34} />
             </Link>
           </div>
 

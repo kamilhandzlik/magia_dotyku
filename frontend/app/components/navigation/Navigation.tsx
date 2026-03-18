@@ -23,7 +23,7 @@ export default function Navigation({ isDesktop = false }) {
           <Link
             key={item}
             href="/#"
-            className="text-[#d3c48b] hover:text-pink-300 transition"
+            className="text-[#d3c48b] hover:text-white transition"
           >
             {item}
           </Link>
@@ -42,7 +42,7 @@ export default function Navigation({ isDesktop = false }) {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="white"
-          className="w-[45px] h-[45px] border border-[#d3c48b] rounded"
+          className="w-[45px] h-[45px] hover:text-gray-400"
         >
           <path
             strokeLinecap="round"
@@ -57,7 +57,7 @@ export default function Navigation({ isDesktop = false }) {
           {links.map((item) => (
             <div
               key={item}
-              className="p-4 text-[#d3c48b] hover:text-pink-300 hover:bg-black rounded-2xl"
+              className="p-4 text-[#d3c48b] hover:text-white hover:bg-black rounded-2xl"
             >
               <Link href="/#">{item}</Link>
             </div>
