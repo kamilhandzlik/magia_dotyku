@@ -12,7 +12,7 @@ export default function Footer() {
           {/* LEWA - LOGO */}
           <div className="flex justify-center md:justify-start">
             <Image
-              src="/stopka-lisc.jpg"
+              src="/stopka/stopka-lisc.jpg"
               alt="stopka-lisc"
               width={180}
               height={180}
@@ -23,13 +23,18 @@ export default function Footer() {
           {/* KONTAKT */}
           <div className="space-y-4 text-sm">
             <div className="flex items-center gap-3 hover:text-white transition">
-              <Image src="/stopka-tel-1.png" alt="tel" width={30} height={30} />
+              <Image
+                src="/stopka/stopka-tel-1.png"
+                alt="tel"
+                width={30}
+                height={30}
+              />
               <span>+48 502-086-318</span>
             </div>
 
             <div className="flex items-center gap-3 hover:text-white transition">
               <Image
-                src="/stopka-adres.png"
+                src="/stopka/stopka-adres.png"
                 alt="adres"
                 width={30}
                 height={30}
@@ -38,7 +43,12 @@ export default function Footer() {
             </div>
 
             <div className="flex items-center gap-3 hover:text-white transition">
-              <Image src="/stopka-www.png" alt="www" width={30} height={30} />
+              <Image
+                src="/stopka/stopka-www.png"
+                alt="www"
+                width={30}
+                height={30}
+              />
               <span>www.oristyle.pl</span>
             </div>
           </div>
@@ -47,14 +57,19 @@ export default function Footer() {
           <div className="flex flex-col items-center gap-4">
             <Link href="#">
               <div className="bg-[#d3c48b] p-3 rounded-lg hover:scale-110 transition">
-                <Image src="/stopka-fb.png" alt="fb" width={40} height={40} />
+                <Image
+                  src="/stopka/stopka-fb.png"
+                  alt="fb"
+                  width={40}
+                  height={40}
+                />
               </div>
             </Link>
 
             <Link href="#">
               <div className="bg-[#d3c48b] p-3 rounded-lg hover:scale-110 transition">
                 <Image
-                  src="/stopka-inst.png"
+                  src="/stopka/stopka-inst.png"
                   alt="insta"
                   width={40}
                   height={40}
@@ -75,7 +90,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-2 justify-center md:justify-start pt-4">
               <Image
-                src="/stopka-right-1.png"
+                src="/stopka/stopka-right-1.png"
                 alt="logo"
                 width={40}
                 height={40}

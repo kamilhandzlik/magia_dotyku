@@ -15,21 +15,36 @@ export default function Navbar() {
           {/*LEFT - logo duże */}
           <div className="hidden xl:block">
             <Link href="/">
-              <Image src="/logo_5.png" alt="Logo" width={180} height={38} />
+              <Image
+                src="/logo/logo_5.png"
+                alt="Logo"
+                width={180}
+                height={38}
+              />
             </Link>
           </div>
 
           {/* CENTER - logo wyśrodkowane */}
           <div className="absolute left-1/2 -translate-x-1/2 md:hidden">
             <Link href="/">
-              <Image src="/logo_2.png" alt="Logo" width={100} height={140} />
+              <Image
+                src="/logo/logo_2.png"
+                alt="Logo"
+                width={100}
+                height={140}
+              />
             </Link>
           </div>
 
           {/* MD - logo po lewej */}
           <div className="hidden md:block xl:hidden ml-6">
             <Link href="/">
-              <Image src="/logo_2.png" alt="Logo" width={100} height={34} />
+              <Image
+                src="/logo/logo_2.png"
+                alt="Logo"
+                width={100}
+                height={34}
+              />
             </Link>
           </div>
 
