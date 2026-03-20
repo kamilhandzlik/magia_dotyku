@@ -9,7 +9,6 @@ export default function Navigation({ isDesktop = false }) {
     "STRONA GŁÓWNA",
     "POZNAJMY SIĘ",
     "SZKOLENIA I SPOTKANIA",
-    "ZABIEGI DOMOWE",
     "ZABIEGI GABINETOWE",
     "ACCESS BARS",
     "BIOREZONANS",
