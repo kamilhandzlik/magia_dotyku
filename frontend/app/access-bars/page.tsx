@@ -7,12 +7,12 @@ export default function AccessBars() {
   return (
     <>
       <section className="relative overflow-hidden py-20 px-6 text-white">
-        {/* TŁO */}
+        {/* Background */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#1f2123] via-[#181a1b] to-black -z-10" />
         <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-amber-500/10 blur-[120px] rounded-full -z-10" />
 
         <div className="max-w-[1100px] mx-auto space-y-16">
-          {/* 🔥 TYTUŁ */}
+          {/* Title */}
           <div className="text-center space-y-6">
             <h2 className="text-4xl font-bold">Access Bars</h2>
 
@@ -32,9 +32,9 @@ export default function AccessBars() {
             </div>
           </div>
 
-          {/* 🔥 OBRAZ + TEKST BOCZNY */}
+          {/* Image + Side Text */}
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* OBRAZ */}
+            {/* Image */}
             <div className="relative group overflow-hidden rounded-2xl">
               <Image
                 src="/pictures/IMG_4.png"
@@ -45,7 +45,7 @@ export default function AccessBars() {
               />
             </div>
 
-            {/* TEKST BOCZNY */}
+            {/* Side Text */}
             <div className="space-y-6 text-lg leading-relaxed text-justify">
               <p>
                 <span className="text-amber-400 font-semibold">
@@ -81,7 +81,7 @@ export default function AccessBars() {
             </div>
           </div>
 
-          {/* 🔥 TEKST DOLNY */}
+          {/* Bottom Text */}
           <div className="max-w-[900px] mx-auto space-y-8 text-lg leading-relaxed text-center">
             <p className="text-xl font-semibold">
               CELEM ACCESS BARS JEST, ABY WSZYSTKO W ŻYCIU PRZYCHODZIŁO Z{" "}
