@@ -24,3 +24,20 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.regulamin {
+  counter-reset: item;
+}
+
+.regulamin p {
+  counter-increment: item;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.regulamin p::before {
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  font-weight: 600;
+}

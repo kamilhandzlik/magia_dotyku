@@ -73,7 +73,7 @@ export default function SectionItems() {
     {
       title: "Funkcje wątroby i pęcherzyka żółciowego:",
       image: "/biorezonans/watroba-i-pecherzy.png",
-      reverse: false,
+      reverse: true,
       items: [
         "Metabolizm białek",
         "Produkcja energii",
