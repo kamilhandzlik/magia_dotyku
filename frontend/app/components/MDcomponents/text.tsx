@@ -8,14 +8,14 @@ export default function AboutSection() {
       <div className="space-y-6 leading-relaxed text-lg">
         <p className="text-xl font-semibold text-center">
           To przestrzeń{" "}
-          <span className="text-amber-400">Terapii CIAŁA – DUSZY – UMYSŁU</span>
+          <span className="text-[#d3c48b]">Terapii CIAŁA – DUSZY – UMYSŁU</span>
           .
         </p>
 
         <p>
           Mam przyjemność zaprosić Cię do niesamowitej przestrzeni jaką stwarzam
           każdego dnia, by wprowadzić Twoje ciało – duszę – umysł w{" "}
-          <span className="text-amber-400 font-semibold">
+          <span className="text-[#d3c48b] font-semibold">
             HOLISTYCZNY BALANS
           </span>{" "}
           i utrzymywać je w młodzieńczym rytmie, abyś odczuwał/a każdym zmysłem
@@ -26,7 +26,7 @@ export default function AboutSection() {
           Każdy z nas chce wyglądać i czuć się młodo. To naturalna potrzeba,
           którą pomagam odkryć i pokazuję jak o nią dbać od najmłodszych lat –
           by stało się to nie chwilowym celem, lecz{" "}
-          <span className="text-amber-400 font-semibold">
+          <span className="text-[#d3c48b] font-semibold">
             WYZWANIEM NA CAŁE ŻYCIE
           </span>
           .
@@ -46,7 +46,7 @@ export default function AboutSection() {
         </p>
 
         <p className="text-center font-semibold">
-          JAK WIDZISZ SĄ <span className="text-amber-400">3 PRZESTRZENIE</span>,
+          JAK WIDZISZ SĄ <span className="text-[#d3c48b]">3 PRZESTRZENIE</span>,
           w których pracuję z Tobą, aby krok po kroku wznieść Twoje zdrowie,
           samopoczucie i relacje na wyższy poziom komfortu życia.
         </p>
@@ -55,7 +55,7 @@ export default function AboutSection() {
           Zapoznaj się z pełną ofertą w{" "}
           <Link
             href="#"
-            className="text-amber-400 underline hover:text-amber-300 transition-colors duration-200"
+            className="text-[#d3c48b] underline hover:text-white transition-colors duration-200"
           >
             aplikacji Booksy
           </Link>{" "}

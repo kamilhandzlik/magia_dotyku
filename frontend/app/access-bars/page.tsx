@@ -21,7 +21,7 @@ export default function AccessBars() {
               <div className="h-[1px] w-24 bg-gradient-to-r from-transparent via-white to-transparent opacity-40" />
             </div>
 
-            <p className="text-2xl font-semibold text-amber-400 drop-shadow-[0_0_10px_rgba(251,191,36,0.4)]">
+            <p className="text-2xl font-semibold text-[#d3c48b] drop-shadow-[0_0_10px_rgba(251,191,36,0.4)]">
               to zastrzyk ENERGII – który oczyszcza umysł pozwalając kreować
               Twoje nowe spokojne życie w lekkości i radości
             </p>
@@ -48,7 +48,7 @@ export default function AccessBars() {
             {/* Side Text */}
             <div className="space-y-6 text-lg leading-relaxed text-justify">
               <p>
-                <span className="text-amber-400 font-semibold">
+                <span className="text-[#d3c48b] font-semibold">
                   Terapia Access Bars Consciousness ®
                 </span>{" "}
                 oczyszcza umysł i otwiera dostęp do świadomości.
@@ -70,7 +70,7 @@ export default function AccessBars() {
                 biegu często nie dajemy sobie przestrzeni, by je poczuć.
               </p>
 
-              <p className="text-amber-400 font-semibold">
+              <p className="text-[#d3c48b] font-semibold">
                 Access Bars to impuls, który uruchamia się już chwilę po sesji.
               </p>
 
@@ -85,14 +85,14 @@ export default function AccessBars() {
           <div className="max-w-[900px] mx-auto space-y-8 text-lg leading-relaxed text-center">
             <p className="text-xl font-semibold">
               CELEM ACCESS BARS JEST, ABY WSZYSTKO W ŻYCIU PRZYCHODZIŁO Z{" "}
-              <span className="text-amber-400">
+              <span className="text-[#d3c48b]">
                 ŁATWOŚCIĄ, RADOŚCIĄ I OBFITOŚCIĄ
               </span>
             </p>
 
             <p>
               Dla każdego ważny jest{" "}
-              <span className="text-amber-400 font-semibold">spokój</span>.
+              <span className="text-[#d3c48b] font-semibold">spokój</span>.
               Proces Access Bars pozwala osiągnąć go w sposób naturalny, lekki i
               dostępny dla każdego.
             </p>
@@ -122,7 +122,7 @@ export default function AccessBars() {
               stosowana na całym świecie.
             </p>
 
-            <p className="text-2xl font-semibold text-amber-400">
+            <p className="text-2xl font-semibold text-[#d3c48b]">
               Czy jesteś gotowa na inspirację i lekkość?
             </p>
 

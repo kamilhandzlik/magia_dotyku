@@ -15,7 +15,7 @@ export default function BonPodarunkowy() {
         <div className="max-w-[1100px] mx-auto space-y-16">
           {/* Title */}
           <div className="text-center space-y-6">
-            <h2 className="text-4xl text-amber-400 font-bold">
+            <h2 className="text-4xl text-[#d3c48b] font-bold">
               Bon podarunkowy
             </h2>
 

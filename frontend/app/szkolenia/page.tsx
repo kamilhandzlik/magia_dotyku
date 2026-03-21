@@ -27,7 +27,7 @@ export default function Szkolenia() {
             <p>
               To przestrzeń, w której spotykamy się nie tylko po to, by się
               nauczyć… ale by{" "}
-              <span className="text-amber-400 font-semibold">
+              <span className="text-[#d3c48b] font-semibold">
                 poczuć, zrozumieć i doświadczyć
               </span>{" "}
               siebie na głębszym poziomie.
@@ -41,7 +41,7 @@ export default function Szkolenia() {
 
             <p>
               Podczas szkoleń i warsztatów pracujemy z{" "}
-              <span className="text-amber-400 font-semibold">
+              <span className="text-[#d3c48b] font-semibold">
                 ciałem, oddechem i świadomością
               </span>
               , odkrywając to, co często w codziennym biegu zostaje pominięte.
@@ -58,7 +58,7 @@ export default function Szkolenia() {
               pogłębić swoją wiedzę – znajdziesz tu przestrzeń dla siebie.
             </p>
 
-            <p className="text-xl font-semibold text-amber-400">
+            <p className="text-xl font-semibold text-[#d3c48b]">
               Zatrzymaj się. Oddychaj. Poczuj.
             </p>
 

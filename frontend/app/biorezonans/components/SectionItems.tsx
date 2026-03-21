@@ -105,7 +105,7 @@ export default function SectionItems() {
         )}
 
         <div className="space-y-6 text-lg leading-relaxed text-justify">
-          <span className="text-amber-400 text-2xl font-semibold">{title}</span>
+          <span className="text-[#d3c48b] text-2xl font-semibold">{title}</span>
 
           <ul className="space-y-2 text-gray-200 list-disc list-inside mt-4">
             {items.map((item, i) => (

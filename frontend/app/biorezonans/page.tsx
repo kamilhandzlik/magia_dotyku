@@ -40,7 +40,7 @@ export default function AccessBars() {
             {/* Side Text */}
             <div className="space-y-6 text-lg leading-relaxed text-justify">
               <p>
-                <span className="text-amber-400 font-semibold">
+                <span className="text-[#d3c48b] font-semibold">
                   BIOREZONANS
                 </span>{" "}
                 to nieinwazyjna metoda diagnostyczna analizująca Prawidłowość
@@ -57,7 +57,7 @@ export default function AccessBars() {
                 zwrotne o stanie poszczególnych narządów. Komputerowy
               </p>
 
-              <p className="text-amber-400 font-semibold">
+              <p className="text-[#d3c48b] font-semibold">
                 biorezonans magnetyczny organizmu
               </p>
 
@@ -73,7 +73,7 @@ export default function AccessBars() {
 
           {/* Bottom Text */}
           <div className="max-w-[900px] mx-auto space-y-8 text-lg leading-relaxed text-justify">
-            <p className="text-xl font-semibold text-amber-400">
+            <p className="text-xl font-semibold text-[#d3c48b]">
               Uzyskasz informacje w kierunku :{" "}
               <span className="text-white">
                 Cukrzycy, Funkcjonowania żołądka, Funkcjonowania jelita
@@ -91,7 +91,7 @@ export default function AccessBars() {
             </p>
 
             <p>
-              <span className="text-amber-400 font-semibold ">
+              <span className="text-[#d3c48b] font-semibold ">
                 PRZECIWWSKAZANIA{" "}
               </span>
               do badania biorezonansem:{" "}
@@ -103,7 +103,7 @@ export default function AccessBars() {
             </p>
 
             <p>
-              <span className="text-amber-400 font-semibold">ZALECENIA</span>
+              <span className="text-[#d3c48b] font-semibold">ZALECENIA</span>
               przed badaniem biorezonansem:{" "}
               <span className="text-white">
                 Należy zdjąć wszystkie metalowe przedmioty, biżuterię, okulary.
@@ -121,11 +121,11 @@ export default function AccessBars() {
               </span>
             </p>
             <p>
-              <span className="text-amber-400 font-semibold">
+              <span className="text-[#d3c48b] font-semibold">
                 Badanie dostępne w pakiecie wraz z zaleceniami
               </span>
               w wersji STANDARD{" "}
-              <span className="text-amber-400 font-semibold">
+              <span className="text-[#d3c48b] font-semibold">
                 w cenie 250zł.
               </span>
             </p>

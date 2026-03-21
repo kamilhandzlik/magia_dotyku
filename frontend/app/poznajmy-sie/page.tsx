@@ -29,7 +29,7 @@ export default function PoznajmySie() {
 
             <p className="text-xl">
               Nazywam się{" "}
-              <span className="text-amber-400 font-semibold">
+              <span className="text-[#d3c48b] font-semibold">
                 Ola Burczyńska
               </span>{" "}
               i witam Cię serdecznie ✨
@@ -37,7 +37,7 @@ export default function PoznajmySie() {
 
             <p>
               Zapraszam Cię do wspólnej podróży po{" "}
-              <span className="text-amber-400 font-semibold">
+              <span className="text-[#d3c48b] font-semibold">
                 Radosnej Stronie Życia
               </span>
               , gdzie harmonijnie łączymy DUSZĘ – CIAŁO – UMYSŁ.
@@ -45,7 +45,7 @@ export default function PoznajmySie() {
 
             <p>
               Moją ideą stworzenia tej przestrzeni jest miejsce pełne{" "}
-              <span className="text-amber-400">
+              <span className="text-[#d3c48b]">
                 spokoju, empatii i zrozumienia
               </span>
               , które pomaga odkryć Twoją wewnętrzną siłę.
@@ -54,7 +54,7 @@ export default function PoznajmySie() {
         </div>
 
         <div className="max-w-[800px] mx-auto mt-20 space-y-6 text-center">
-          <h3 className="text-2xl font-semibold text-amber-400">
+          <h3 className="text-2xl font-semibold text-[#d3c48b]">
             Zatrzymaj się na chwilę…
           </h3>
 
@@ -69,7 +69,7 @@ export default function PoznajmySie() {
         <div className="max-w-[900px] mx-auto mt-20 space-y-6 text-center">
           <p className="text-xl">A może zacznij…</p>
 
-          <p className="text-2xl font-semibold text-amber-400">
+          <p className="text-2xl font-semibold text-[#d3c48b]">
             traktować siebie jak najlepszą przyjaciółkę
           </p>
 
@@ -80,7 +80,7 @@ export default function PoznajmySie() {
 
           <p className="text-lg">
             Postaw siebie na pierwszym miejscu… choćby na{" "}
-            <span className="text-amber-400 font-semibold">3 miesiące</span>.
+            <span className="text-[#d3c48b] font-semibold">3 miesiące</span>.
           </p>
 
           <p className="text-2xl font-bold">I zobacz, kim się staniesz </p>
@@ -97,7 +97,7 @@ export default function PoznajmySie() {
             O TWOJEJ WARTOŚCI świadczy czas, jaki SOBIE dajesz.
           </p>
 
-          <p className="text-2xl font-semibold text-amber-400">
+          <p className="text-2xl font-semibold text-[#d3c48b]">
             WARTO robić to dla siebie
           </p>
 
