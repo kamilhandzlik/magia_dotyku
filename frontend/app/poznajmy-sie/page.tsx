@@ -7,9 +7,9 @@ import Footer from "../components/Footer/Footer";
 export default function PoznajmySie() {
   return (
     <>
-      <section className="relative overflow-hidden py-20 px-6 text-white">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1f2123] via-[#181a1b] to-black -z-10" />
-
+      <section className="relative overflow-hidden py-20 px-6 text-gray-600">
+        {/* Background */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#cfcecb] via-[#fffef4] to-white -z-10" />
         <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-amber-500/10 blur-[120px] rounded-full -z-10" />
 
         <div className="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -29,7 +29,7 @@ export default function PoznajmySie() {
 
             <p className="text-xl">
               Nazywam się{" "}
-              <span className="text-[#d3c48b] font-semibold">
+              <span className="text-[#968956] font-semibold">
                 Ola Burczyńska
               </span>{" "}
               i witam Cię serdecznie ✨
@@ -37,7 +37,7 @@ export default function PoznajmySie() {
 
             <p>
               Zapraszam Cię do wspólnej podróży po{" "}
-              <span className="text-[#d3c48b] font-semibold">
+              <span className="text-[#968956] font-semibold">
                 Radosnej Stronie Życia
               </span>
               , gdzie harmonijnie łączymy DUSZĘ – CIAŁO – UMYSŁ.
@@ -45,7 +45,7 @@ export default function PoznajmySie() {
 
             <p>
               Moją ideą stworzenia tej przestrzeni jest miejsce pełne{" "}
-              <span className="text-[#d3c48b]">
+              <span className="text-[#968956]">
                 spokoju, empatii i zrozumienia
               </span>
               , które pomaga odkryć Twoją wewnętrzną siłę.
@@ -54,7 +54,7 @@ export default function PoznajmySie() {
         </div>
 
         <div className="max-w-[800px] mx-auto mt-20 space-y-6 text-center">
-          <h3 className="text-2xl font-semibold text-[#d3c48b]">
+          <h3 className="text-2xl font-semibold text-[#968956]">
             Zatrzymaj się na chwilę…
           </h3>
 
@@ -69,7 +69,7 @@ export default function PoznajmySie() {
         <div className="max-w-[900px] mx-auto mt-20 space-y-6 text-center">
           <p className="text-xl">A może zacznij…</p>
 
-          <p className="text-2xl font-semibold text-[#d3c48b]">
+          <p className="text-2xl font-semibold text-[#968956]">
             traktować siebie jak najlepszą przyjaciółkę
           </p>
 
@@ -80,7 +80,7 @@ export default function PoznajmySie() {
 
           <p className="text-lg">
             Postaw siebie na pierwszym miejscu… choćby na{" "}
-            <span className="text-[#d3c48b] font-semibold">3 miesiące</span>.
+            <span className="text-[#968956] font-semibold">3 miesiące</span>.
           </p>
 
           <p className="text-2xl font-bold">I zobacz, kim się staniesz </p>
@@ -97,7 +97,7 @@ export default function PoznajmySie() {
             O TWOJEJ WARTOŚCI świadczy czas, jaki SOBIE dajesz.
           </p>
 
-          <p className="text-2xl font-semibold text-[#d3c48b]">
+          <p className="text-2xl font-semibold text-[#968956]">
             WARTO robić to dla siebie
           </p>
 

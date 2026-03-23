@@ -26,7 +26,7 @@ export default function ZabiegiGabinetowe() {
 
             <p>
               Każdy potrzebuje dotyku, który{" "}
-              <span className="text-amber-400 font-semibold">
+              <span className="text-[#d3c48b] font-semibold">
                 odpręża, relaksuje i regeneruje
               </span>
               . To właśnie zapewniam w salonie gabinetowym, gdzie otrzymujecie
@@ -45,14 +45,14 @@ export default function ZabiegiGabinetowe() {
             </p>
 
             <p>
-              <span className="text-amber-400 font-semibold">Magia Dotyku</span>{" "}
+              <span className="text-[#d3c48b] font-semibold">Magia Dotyku</span>{" "}
               to miejsce, w którym otrzymasz więcej niż masaż – moją misją jest
               wzmacniać i wspierać Twoje zdrowie.
             </p>
 
             <p>
               Zapraszam do zakładki{" "}
-              <span className="text-amber-400 underline cursor-pointer hover:text-amber-300 transition">
+              <span className="text-[#d3c48b] underline cursor-pointer hover:text-amber-300 transition">
                 Magia Dotyku
               </span>
               , gdzie znajdziesz pakiety zabiegów na twarz i ciało.

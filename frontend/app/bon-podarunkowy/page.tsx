@@ -7,15 +7,15 @@ import Footer from "../components/Footer/Footer";
 export default function BonPodarunkowy() {
   return (
     <>
-      <section className="relative overflow-hidden py-20 px-6 text-white">
+      <section className="relative overflow-hidden py-20 px-6 text-gray-600">
         {/* Background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1f2123] via-[#181a1b] to-black -z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#cfcecb] via-[#fffef4] to-white -z-10" />
         <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-amber-500/10 blur-[120px] rounded-full -z-10" />
 
         <div className="max-w-[1100px] mx-auto space-y-16">
           {/* Title */}
           <div className="text-center space-y-6">
-            <h2 className="text-4xl text-[#d3c48b] font-bold">
+            <h2 className="text-4xl text-[#968956] font-bold">
               Bon podarunkowy
             </h2>
 
@@ -24,7 +24,7 @@ export default function BonPodarunkowy() {
               <div className="h-[1px] w-24 bg-gradient-to-r from-transparent via-white to-transparent opacity-40" />
             </div>
 
-            <p className="text-2xl font-semibold text-white drop-shadow-[0_0_10px_rgba(251,191,36,0.4)]">
+            <p className="text-2xl font-semibold text-black drop-shadow-[0_0_10px_rgba(251,191,36,0.4)]">
               Bon podarunkowy na zabiegi dla ciała to wspaniały prezent jaki
               można podarować komuś, komu chcemy okazać wdzięczność za to, że
               jest, docenić za okazywaną troskę dnia codziennego, za wsparcie
@@ -48,7 +48,7 @@ export default function BonPodarunkowy() {
               </div>
 
               {/* Side Text */}
-              <div className="space-y-6 text-lg leading-relaxed text-justify">
+              <div className="space-y-6 text-lg leading-relaxed text-gray-500 text-justify">
                 <p>
                   Podaruj bliskiej osobie coś więcej niż prezent — podaruj jej
                   czas tylko dla siebie. Bon podarunkowy na zabiegi to idealny
@@ -69,8 +69,8 @@ export default function BonPodarunkowy() {
           </div>
         </div>
         <br />
-        <Footer />
       </section>
+      <Footer />
     </>
   );
 }

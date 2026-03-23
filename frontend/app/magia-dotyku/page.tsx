@@ -9,7 +9,9 @@ export default function MagiaDotyku() {
         <h1 className="text-4xl py-6 text-center font-semibold text-[#d3c48b]">
           Magia Dotyku
         </h1>
-        <Zabiegi />
+        <div className="items-center">
+          <Zabiegi />
+        </div>
         <div className="py-16">
           <AboutSection />
         </div>

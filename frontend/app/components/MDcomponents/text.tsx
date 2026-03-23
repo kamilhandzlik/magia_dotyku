@@ -4,18 +4,18 @@ import Link from "next/link";
 
 export default function AboutSection() {
   return (
-    <section className="max-w-[900px] mx-auto px-6 py-16 text-white">
+    <section className="max-w-[900px] mx-auto px-6 py-16 text-gray-600">
       <div className="space-y-6 leading-relaxed text-lg">
         <p className="text-xl font-semibold text-center">
           To przestrzeń{" "}
-          <span className="text-[#d3c48b]">Terapii CIAŁA – DUSZY – UMYSŁU</span>
+          <span className="text-[#968956]">Terapii CIAŁA – DUSZY – UMYSŁU</span>
           .
         </p>
 
         <p>
           Mam przyjemność zaprosić Cię do niesamowitej przestrzeni jaką stwarzam
           każdego dnia, by wprowadzić Twoje ciało – duszę – umysł w{" "}
-          <span className="text-[#d3c48b] font-semibold">
+          <span className="text-[#968956] font-semibold">
             HOLISTYCZNY BALANS
           </span>{" "}
           i utrzymywać je w młodzieńczym rytmie, abyś odczuwał/a każdym zmysłem
@@ -26,7 +26,7 @@ export default function AboutSection() {
           Każdy z nas chce wyglądać i czuć się młodo. To naturalna potrzeba,
           którą pomagam odkryć i pokazuję jak o nią dbać od najmłodszych lat –
           by stało się to nie chwilowym celem, lecz{" "}
-          <span className="text-[#d3c48b] font-semibold">
+          <span className="text-[#968956] font-semibold">
             WYZWANIEM NA CAŁE ŻYCIE
           </span>
           .
@@ -46,7 +46,7 @@ export default function AboutSection() {
         </p>
 
         <p className="text-center font-semibold">
-          JAK WIDZISZ SĄ <span className="text-[#d3c48b]">3 PRZESTRZENIE</span>,
+          JAK WIDZISZ SĄ <span className="text-[#968956]">3 PRZESTRZENIE</span>,
           w których pracuję z Tobą, aby krok po kroku wznieść Twoje zdrowie,
           samopoczucie i relacje na wyższy poziom komfortu życia.
         </p>
@@ -55,7 +55,7 @@ export default function AboutSection() {
           Zapoznaj się z pełną ofertą w{" "}
           <Link
             href="#"
-            className="text-[#d3c48b] underline hover:text-white transition-colors duration-200"
+            className="text-[#968956] underline hover:text-green-950 transition-colors duration-200"
           >
             aplikacji Booksy
           </Link>{" "}
@@ -64,7 +64,7 @@ export default function AboutSection() {
         </p>
 
         <p className="text-center text-xl font-medium mt-8">
-          Z nami nie tylko zrelaksujesz ciało, ale i duszę ✨
+          Z nami nie tylko zrelaksujesz ciało, ale i duszę
         </p>
       </div>
     </section>

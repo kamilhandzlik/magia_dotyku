@@ -6,22 +6,22 @@ import Footer from "../components/Footer/Footer";
 export default function AccessBars() {
   return (
     <>
-      <section className="relative overflow-hidden py-20 px-6 text-white">
+      <section className="relative overflow-hidden py-20 px-6 text-gray-600">
         {/* Background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1f2123] via-[#181a1b] to-black -z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#cfcecb] via-[#fffef4] to-white -z-10" />
         <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-amber-500/10 blur-[120px] rounded-full -z-10" />
 
         <div className="max-w-[1100px] mx-auto space-y-16">
           {/* Title */}
           <div className="text-center space-y-6">
-            <h2 className="text-4xl font-bold">Access Bars</h2>
+            <h2 className="text-4xl text-[#968956] font-bold">Access Bars</h2>
 
             <div className="flex items-center justify-center gap-4">
               <div className="h-[1px] w-24 bg-gradient-to-r from-transparent via-white to-transparent opacity-40" />
               <div className="h-[1px] w-24 bg-gradient-to-r from-transparent via-white to-transparent opacity-40" />
             </div>
 
-            <p className="text-2xl font-semibold text-[#d3c48b] drop-shadow-[0_0_10px_rgba(251,191,36,0.4)]">
+            <p className="text-2xl font-semibold text-text-gray-400 drop-shadow-[0_0_10px_rgba(251,191,36,0.4)]">
               to zastrzyk ENERGII – który oczyszcza umysł pozwalając kreować
               Twoje nowe spokojne życie w lekkości i radości
             </p>
@@ -48,7 +48,7 @@ export default function AccessBars() {
             {/* Side Text */}
             <div className="space-y-6 text-lg leading-relaxed text-justify">
               <p>
-                <span className="text-[#d3c48b] font-semibold">
+                <span className="text-[#968956] font-semibold">
                   Terapia Access Bars Consciousness ®
                 </span>{" "}
                 oczyszcza umysł i otwiera dostęp do świadomości.
@@ -70,7 +70,7 @@ export default function AccessBars() {
                 biegu często nie dajemy sobie przestrzeni, by je poczuć.
               </p>
 
-              <p className="text-[#d3c48b] font-semibold">
+              <p className="text-[#968956] font-semibold">
                 Access Bars to impuls, który uruchamia się już chwilę po sesji.
               </p>
 
@@ -85,14 +85,14 @@ export default function AccessBars() {
           <div className="max-w-[900px] mx-auto space-y-8 text-lg leading-relaxed text-center">
             <p className="text-xl font-semibold">
               CELEM ACCESS BARS JEST, ABY WSZYSTKO W ŻYCIU PRZYCHODZIŁO Z{" "}
-              <span className="text-[#d3c48b]">
+              <span className="text-[#968956]">
                 ŁATWOŚCIĄ, RADOŚCIĄ I OBFITOŚCIĄ
               </span>
             </p>
 
             <p>
               Dla każdego ważny jest{" "}
-              <span className="text-[#d3c48b] font-semibold">spokój</span>.
+              <span className="text-[#968956] font-semibold">spokój</span>.
               Proces Access Bars pozwala osiągnąć go w sposób naturalny, lekki i
               dostępny dla każdego.
             </p>
@@ -122,7 +122,7 @@ export default function AccessBars() {
               stosowana na całym świecie.
             </p>
 
-            <p className="text-2xl font-semibold text-[#d3c48b]">
+            <p className="text-2xl font-semibold text-[#968956]">
               Czy jesteś gotowa na inspirację i lekkość?
             </p>
 

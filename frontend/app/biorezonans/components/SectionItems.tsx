@@ -91,7 +91,7 @@ export default function SectionItems() {
 
   const SectionItem = ({ title, items, image, reverse = false }) => {
     return (
-      <div className="grid md:grid-cols-2 gap-12 items-center bg-[#131313] rounded-2xl p-6">
+      <div className="grid md:grid-cols-2 gap-12 items-center bg-[white] shadow-gray-200 shadow-md rounded-2xl p-6">
         {!reverse && (
           <div className="relative group overflow-hidden rounded-2xl">
             <Image
@@ -105,9 +105,9 @@ export default function SectionItems() {
         )}
 
         <div className="space-y-6 text-lg leading-relaxed text-justify">
-          <span className="text-[#d3c48b] text-2xl font-semibold">{title}</span>
+          <span className="text-[#968956] text-2xl font-semibold">{title}</span>
 
-          <ul className="space-y-2 text-gray-200 list-disc list-inside mt-4">
+          <ul className="space-y-2 text-gray-500 list-disc list-inside mt-4">
             {items.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
