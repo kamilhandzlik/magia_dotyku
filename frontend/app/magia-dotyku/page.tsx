@@ -1,12 +1,15 @@
 import Zabiegi from "../components/MDcomponents/zabiegi";
 import AboutSection from "../components/MDcomponents/text";
+
 import Footer from "../components/Footer/Footer";
+import HeroMd from "../components/Hero/HeroMd";
 
 export default function MagiaDotyku() {
   return (
     <>
+      <HeroMd />
       <div className="px-6 py-10">
-        <h1 className="text-4xl py-6 text-center font-semibold text-[#d3c48b]">
+        <h1 className="text-4xl py-6 text-center font-semibold text-[#968956]">
           Magia Dotyku
         </h1>
         <div className="items-center">

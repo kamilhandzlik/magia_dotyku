@@ -2,10 +2,13 @@
 
 import Image from "next/image";
 import Footer from "../components/Footer/Footer";
+import HeroMd from "../components/Hero/HeroMd";
 
 export default function Szkolenia() {
   return (
     <>
+      <HeroMd />
+
       <section className="relative overflow-hidden py-20 px-6 text-gray-600">
         {/* Background */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#cfcecb] via-[#fffef4] to-white -z-10" />

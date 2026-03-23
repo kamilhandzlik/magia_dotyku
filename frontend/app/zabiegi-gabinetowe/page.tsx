@@ -2,12 +2,15 @@
 
 import Image from "next/image";
 import Footer from "../components/Footer/Footer";
+import HeroMd from "../components/Hero/HeroMd";
 
 export default function ZabiegiGabinetowe() {
   return (
     <>
-      <section className="relative overflow-hidden py-20 px-6 text-white">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1f2123] via-[#181a1b] to-black -z-10" />
+      <HeroMd />
+      <section className="relative overflow-hidden py-20 px-6 text-gray-600">
+        {/* Background */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#cfcecb] via-[#fffef4] to-white -z-10" />
         <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-amber-500/10 blur-[120px] rounded-full -z-10" />
 
         <div className="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -26,7 +29,7 @@ export default function ZabiegiGabinetowe() {
 
             <p>
               Każdy potrzebuje dotyku, który{" "}
-              <span className="text-[#d3c48b] font-semibold">
+              <span className="text-[#968956]font-semibold">
                 odpręża, relaksuje i regeneruje
               </span>
               . To właśnie zapewniam w salonie gabinetowym, gdzie otrzymujecie
@@ -45,14 +48,14 @@ export default function ZabiegiGabinetowe() {
             </p>
 
             <p>
-              <span className="text-[#d3c48b] font-semibold">Magia Dotyku</span>{" "}
+              <span className="text-[#968956] font-semibold">Magia Dotyku</span>{" "}
               to miejsce, w którym otrzymasz więcej niż masaż – moją misją jest
               wzmacniać i wspierać Twoje zdrowie.
             </p>
 
             <p>
               Zapraszam do zakładki{" "}
-              <span className="text-[#d3c48b] underline cursor-pointer hover:text-amber-300 transition">
+              <span className="text-[#968956] underline cursor-pointer hover:text-green-950 transition">
                 Magia Dotyku
               </span>
               , gdzie znajdziesz pakiety zabiegów na twarz i ciało.
