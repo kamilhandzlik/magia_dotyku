@@ -31,7 +31,7 @@ export default function HeroMd() {
         }}
       >
         <Image
-          src="/hero/hero-md.png"
+          src="/hero/hero-glowne.png"
           alt="hero"
           fill
           priority

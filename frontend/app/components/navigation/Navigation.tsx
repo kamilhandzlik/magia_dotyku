@@ -9,7 +9,7 @@ export default function Navigation({ isDesktop = false }) {
     "STRONA GŁÓWNA",
     "POZNAJMY SIĘ",
     "SZKOLENIA I SPOTKANIA",
-    "ZABIEGI GABINETOWE",
+    "MAGIA DOTYKU",
     "ACCESS BARS",
     "BIOREZONANS",
   ];
