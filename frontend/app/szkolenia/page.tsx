@@ -3,6 +3,9 @@
 import Image from "next/image";
 import Footer from "../components/Footer/Footer";
 import HeroMd from "../components/Hero/HeroMd";
+import SzkoleniaItems from "../components/szkolenia/SzkoleniItems";
+import Terminy from "../components/szkolenia/Terminy";
+import RezerwacjaForm from "../components/szkolenia/Formularz";
 
 export default function Szkolenia() {
   return (
@@ -76,6 +79,12 @@ export default function Szkolenia() {
           </div>
         </div>
       </section>
+
+      <div className="max-w-[1100px] mx-auto py-20 px-6">
+        <SzkoleniaItems />
+        <Terminy />
+        <RezerwacjaForm />
+      </div>
 
       <Footer />
     </>

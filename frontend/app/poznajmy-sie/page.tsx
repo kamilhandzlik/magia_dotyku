@@ -8,7 +8,10 @@ import HeroMd from "../components/Hero/HeroMd";
 export default function PoznajmySie() {
   return (
     <>
-      <HeroMd />
+      <HeroMd
+        title="Poznajmy się"
+        description="Udajmy się razem w podróż do naszego wnętrza. Odkryjmy co kryje się w nas i jak możemy to wykorzystać, by żyć ciesząc się lekkością i radością każdego dnia."
+      />
       <section className="relative overflow-hidden py-20 px-6 text-gray-600">
         {/* Background */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#cfcecb] via-[#fffef4] to-white -z-10" />

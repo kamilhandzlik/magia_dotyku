@@ -1,7 +1,7 @@
 import Footer from "./components/Footer/Footer";
 import HeroMain from "./components/Hero/HeroMain";
-import Categories from "./components/Footer/MainPageComponents/categories";
-import AboutMeMainPage from "./components/Footer/MainPageComponents/AboutMeMainPage";
+import Categories from "./components/MainPageComponents/categories";
+import AboutMeMainPage from "./components/MainPageComponents/AboutMeMainPage";
 
 export default function Home() {
   return (
