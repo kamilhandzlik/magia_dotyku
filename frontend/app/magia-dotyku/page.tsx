@@ -7,7 +7,10 @@ import HeroMd from "../components/Hero/HeroMd";
 export default function MagiaDotyku() {
   return (
     <>
-      <HeroMd />
+      <HeroMd
+        title="Magia Dotyku"
+        description="Stare przysłowie mówi w zdrowym ciele zdrowy duch w magii dotyku zaopiekuję się obiema częściami Ciebie."
+      />
       <div className="px-6 py-10">
         <h1 className="text-4xl py-6 text-center font-semibold text-[#968956]">
           Magia Dotyku

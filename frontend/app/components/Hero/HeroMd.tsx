@@ -3,7 +3,17 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-export default function HeroMd() {
+type HeroMdProps = {
+  title: string;
+  description: string;
+  imageSrc?: string; // opcjonalne
+};
+
+export default function HeroMd({
+  title,
+  description,
+  imageSrc = "/hero/hero-glowne.png",
+}: HeroMdProps) {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -15,10 +25,7 @@ export default function HeroMd() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // fading text effect
   const opacity = Math.max(1 - scrollY / 400, 0);
-
-  // parallax
   const translateY = scrollY * 0.3;
 
   return (
@@ -31,13 +38,12 @@ export default function HeroMd() {
         }}
       >
         <Image
-          src="/hero/hero-glowne.png"
+          src={imageSrc}
           alt="hero"
           fill
           priority
           className="object-cover"
         />
-        {/* little bit of shading/fading */}
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
@@ -46,15 +52,9 @@ export default function HeroMd() {
         className="max-w-4xl px-6 pt-32 text-white transition-opacity duration-300"
         style={{ opacity }}
       >
-        <h1 className="text-5xl md:text-7xl font-light mb-6">
-          Poznaj samą siebie
-        </h1>
+        <h1 className="text-5xl md:text-7xl font-light mb-6">{title}</h1>
 
-        <p className="text-lg leading-relaxed max-w-xl">
-          Udajmy się razem w podróż do naszego wnętrza. Odkryjmy co kryje się w
-          nas i jak możemy to wykorzystać, by żyć ciesząc się lekkością i
-          radością każdego dnia.
-        </p>
+        <p className="text-lg leading-relaxed max-w-xl">{description}</p>
       </div>
     </section>
   );

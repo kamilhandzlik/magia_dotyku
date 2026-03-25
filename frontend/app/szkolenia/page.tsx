@@ -7,7 +7,10 @@ import HeroMd from "../components/Hero/HeroMd";
 export default function Szkolenia() {
   return (
     <>
-      <HeroMd />
+      <HeroMd
+        title="Szkolenia i spotkania"
+        description="Jeśli czujesz, że to właściwy moment, by zrobić krok dalej — zrób go ze mną. Moje szkolenia to przestrzeń, w której wracasz do swojej mocy."
+      />
 
       <section className="relative overflow-hidden py-20 px-6 text-gray-600">
         {/* Background */}

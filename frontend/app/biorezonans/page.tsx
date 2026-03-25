@@ -9,7 +9,10 @@ import SectionItems from "./components/SectionItems";
 export default function AccessBars() {
   return (
     <>
-      <HeroMd />
+      <HeroMd
+        title="Biorezonans"
+        description="Poznajmy bliżej twoje ciało i jego potrzeby, byś mogła zadbać o siebie w pełni świadomie"
+      />
       <section className="relative overflow-hidden py-20 px-6 text-gray-600">
         {/* Background */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#cfcecb] via-[#fffef4] to-white -z-10" />
@@ -48,7 +51,7 @@ export default function AccessBars() {
                 to nieinwazyjna metoda diagnostyczna analizująca Prawidłowość
                 Funkcjonowania Organów i Kondycji Ciała za pomocą odczytu drgań
                 komórek i organów odczytanych z poziomu energetycznego na
-                podstawi którego jest dokonywana analiza.
+                podstawie którego jest dokonywana analiza.
               </p>
 
               <p>
