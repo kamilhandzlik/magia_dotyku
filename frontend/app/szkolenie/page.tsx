@@ -27,7 +27,10 @@ export default function Szkolenie1() {
         title="Szkolenie Access Bars"
         description="Najlepsze szkolenie na świecie!"
       />
-      <section className="py-20 px-6">
+      <h1 className="text-4xl text-[#968956] text-center font-semibold py-10">
+        Szkolenie Access Bars - Magia Dotyku
+      </h1>
+      <section className="py-20 ">
         {sections.map((item, index) => (
           <CircleSection
             key={index}

@@ -16,26 +16,28 @@ export default function CircleSection({
   reverse = false,
 }: Props) {
   return (
-    <div
-      className={`
-        flex flex-col md:flex-row items-center gap-10 my-12
+    <div className="">
+      <div
+        className={`
+        flex flex-col max-w-[1300px] mx-auto md:flex-row items-center gap-10 my-12
         ${reverse ? "md:flex-row-reverse" : ""}
       `}
-    >
-      {/* Obraz */}
-      <div className="w-48 h-48 relative flex-shrink-0">
-        <Image
-          src={image}
-          alt={title}
-          fill
-          className="rounded-full object-cover"
-        />
-      </div>
+      >
+        {/* Obraz */}
+        <div className="w-[240px] h-[240px] relative flex-shrink-0">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className="rounded-full object-cover"
+          />
+        </div>
 
-      {/* Tekst */}
-      <div className="max-w-md text-center md:text-left">
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600">{description}</p>
+        {/* Tekst */}
+        <div className="max-w-md text-center md:text-left">
+          <h3 className="text-xl text-[#968956] font-semibold mb-2">{title}</h3>
+          <p className="text-gray-600">{description}</p>
+        </div>
       </div>
     </div>
   );
