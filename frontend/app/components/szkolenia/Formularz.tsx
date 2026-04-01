@@ -32,15 +32,15 @@ export default function RezerwacjaForm() {
           <div className="grid grid-cols-2 gap-8">
             <p className="space-y-4 text-sm text-gray-700 pt-4">
               Zgłoszenie na szkolenie wiąże się z wpłatą zadatku w wysokości 200
-              zł przy rezerwacji miejsca na klasie Bars lub Facelift i 1000 zł w
-              przypadku wyboru klasy Podstawy, jej wpłata gwarantuje miejsce.
+              zł przy rezerwacji miejsca na klasie Bars i 500 zł w przypadku
+              wyboru klasy Podstawy, jej wpłata gwarantuje miejsce.
             </p>
-            <p className="space-y-4 text-sm text-gray-700 pt-4">
+            <a className="space-y-4 text-sm text-gray-700 pt-4">
               <p>Dane do przelewu:</p>
               <p>Magia dotyku Ola Burczyńska</p>
               <p>numer konta bankowego</p>
               <p>tytułem: miasto + imię i nazwisko</p>
-            </p>
+            </a>
           </div>
         </form>
       </div>
