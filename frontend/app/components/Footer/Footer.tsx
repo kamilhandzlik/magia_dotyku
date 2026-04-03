@@ -55,7 +55,7 @@ export default function Footer() {
 
           {/* SOCIAL MEDIA */}
           <div className="flex flex-col items-center gap-4">
-            <Link href="#">
+            <Link href="https://www.facebook.com/oristyle101/">
               <div className="bg-[#d3c48b] p-3 rounded-lg hover:scale-110 transition">
                 <Image
                   src="/stopka/stopka-fb.png"
@@ -66,7 +66,7 @@ export default function Footer() {
               </div>
             </Link>
 
-            <Link href="#">
+            <Link href="https://www.instagram.com/orii_style">
               <div className="bg-[#d3c48b] p-3 rounded-lg hover:scale-110 transition">
                 <Image
                   src="/stopka/stopka-inst.png"
@@ -80,13 +80,20 @@ export default function Footer() {
 
           {/* LINKI */}
           <div className="space-y-3 text-sm text-center md:text-left">
+            <Link href="/polityka-prywatnosci">
             <p className="hover:text-white cursor-pointer">
               POLITYKA PRYWATNOŚCI
             </p>
+            </Link>
+            <Link href="/regulamin">
             <p className="hover:text-white cursor-pointer">REGULAMIN SKLEPU</p>
+            </Link>
+            <Link href="/regulamin-swiadczenia-uslug">
             <p className="hover:text-white cursor-pointer">
               REGULAMIN ŚWIADCZENIA USŁUG
             </p>
+            </Link>
+
 
             <div className="flex items-center gap-2 justify-center md:justify-start pt-4">
               <Image

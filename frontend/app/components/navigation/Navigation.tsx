@@ -6,32 +6,34 @@ export default function Navigation({ isDesktop = false }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    "STRONA GŁÓWNA",
-    "POZNAJMY SIĘ",
-    "SZKOLENIA I SPOTKANIA",
-    "MAGIA DOTYKU",
-    "ACCESS BARS",
-    "BIOREZONANS",
+    { title: "STRONA GŁÓWNA", href: "/" },
+    { title: "POZNAJMY SIĘ", href: "/poznajmy-sie" },
+    { title: "SZKOLENIA I SPOTKANIA", href: "/szkolenia" },
+    { title: "MAGIA DOTYKU", href: "/magia-dotyku" },
+    { title: "ACCESS BARS", href: "/access-bars" },
+    { title: "BIOREZONANS", href: "/biorezonans" },
   ];
 
-  // 💻 DESKTOP
+  // DESKTOP
   if (isDesktop) {
     return (
       <div className="flex gap-6">
         {links.map((item) => (
+          <div key={item.title} className="relative group">
           <Link
-            key={item}
-            href="/#"
+            key={item.title}
+            href={item.href}
             className="text-[#d3c48b] hover:text-white transition"
           >
-            {item}
+            {item.title}
           </Link>
+          </div>
         ))}
       </div>
     );
   }
 
-  // 📱 MOBILE
+  //  MOBILE
   return (
     <div className="relative">
       <button onClick={() => setIsOpen(!isOpen)}>
@@ -54,11 +56,15 @@ export default function Navigation({ isDesktop = false }) {
       {isOpen && (
         <div className="absolute top-[60px] left-0 bg-[#131313] border border-black shadow-md rounded-2xl w-[250px]">
           {links.map((item) => (
-            <div
-              key={item}
-              className="p-4 text-[#d3c48b] hover:text-white hover:bg-black rounded-2xl"
-            >
-              <Link href="/#">{item}</Link>
+            <div key={item.title} className="px-4 py-2 last:border-b-0">
+              <Link
+            key={item.title}
+            href={item.href}
+            onClick={() => setIsOpen(false)}
+            className="text-[#d3c48b] hover:text-white transition"
+          >
+            {item.title}
+          </Link>
             </div>
           ))}
         </div>

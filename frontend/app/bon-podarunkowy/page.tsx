@@ -70,6 +70,7 @@ export default function BonPodarunkowy() {
         </div>
         <br />
       </section>
+      {/* TODO dodać podobną mechanikę co przy rezerwacji na szkolenie  */}
       <Footer />
     </>
   );

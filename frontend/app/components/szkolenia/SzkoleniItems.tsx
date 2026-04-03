@@ -64,7 +64,7 @@ export default function SzkoleniaItems() {
       </div>
       <div className="items-center">
         <Link
-          href="/#"
+          href="/szkolenia-lista"
           className="inline-block mt-10 w-full  py-6 bg-[#968956] text-white rounded-2xl text-lg font-medium transition-colors duration-300 hover:bg-[#968956]/90"
         >
           <p className="text-center text-3xl font-semibold">

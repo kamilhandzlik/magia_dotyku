@@ -9,37 +9,37 @@ export default function Categories() {
       title: "Poznajmy się",
       img_title: "poznajmy-się",
       image: "/categories/1.png",
-      link: "#",
+      link: "poznajmy-sie",
     },
     {
       title: "Magia dotyku",
       img_title: "magia-dotyku",
       image: "/categories/2.png",
-      link: "#",
+      link: "magia-dotyku",
     },
     {
       title: "Access Bars",
       img_title: "access-bars",
       image: "/categories/4.png",
-      link: "#",
+      link: "access-bars",
     },
     {
       title: "Biorezonans",
       img_title: "biorezonans",
       image: "/categories/5.png",
-      link: "#",
+      link: "biorezonans",
     },
     {
       title: "Wirtualny spacer",
       img_title: "wirtualny-spacer",
       image: "/categories/7.png",
-      link: "#",
+      link: "wirtualny-spacer",
     },
     {
       title: "Zasady funkcjonowania salonu",
       img_title: "zasady-funkcjonowania-salonu",
       image: "/categories/8.png",
-      link: "#",
+      link: "zasady-funkcjonowania-salonu",
     },
   ];
 
