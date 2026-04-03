@@ -1,0 +1,116 @@
+"use client";
+
+import { useState } from "react";
+import { DayPicker } from "react-day-picker";
+import "react-day-picker/dist/style.css";
+import { format } from "date-fns";
+import { pl } from "date-fns/locale";
+
+export default function VoucherBooking() {
+  const [selectedDate, setSelectedDate] = useState();
+  const [selectedHour, setSelectedHour] = useState(null);
+  const [email, setEmail] = useState("");
+
+  const hours = [
+    "09:00",
+    "10:30",
+    "12:00",
+    "14:00",
+    "16:00",
+    "18:00",
+  ];
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const data = {
+      date: selectedDate,
+      hour: selectedHour,
+      email,
+    };
+
+    console.log(data);
+  };
+
+  return (
+    <section className="bg-[#f8f6f4] py-20 px-6">
+      <div className="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-md">
+        <h2 className="text-2xl text-black font-semibold text-center mb-8">
+          Bon Podarunkowy
+        </h2>
+
+        <form onSubmit={handleSubmit} className="space-y-6 text-gray-600">
+          
+          {/* KALENDARZ */}
+          <div>
+            <p className="mb-3 font-medium">Wybierz dzień:</p>
+
+            <div className="flex justify-center">
+              <DayPicker
+                mode="single"
+                selected={selectedDate}
+                onSelect={setSelectedDate}
+                locale={pl}
+                disabled={{ before: new Date() }}
+              />
+            </div>
+
+            {selectedDate && (
+              <p className="mt-2 text-center text-sm text-gray-600">
+                Wybrano:{" "}
+                <strong>
+                  {format(selectedDate, "PPP", { locale: pl })}
+                </strong>
+              </p>
+            )}
+          </div>
+
+          {/* GODZINY */}
+          <div>
+            <p className="mb-3 font-medium">Wybierz godzinę:</p>
+
+            <div className="grid grid-cols-3 gap-3">
+              {hours.map((hour) => (
+                <button
+                  type="button"
+                  key={hour}
+                  onClick={() => setSelectedHour(hour)}
+                  className={`p-3 rounded-xl border text-sm transition
+                    ${
+                      selectedHour === hour
+                        ? "bg-[#9b6f5a] text-white border-[#9b6f5a]"
+                        : "bg-white hover:bg-gray-100"
+                    }`}
+                >
+                  {hour}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* EMAIL */}
+          <div>
+            <label className="block mb-2 font-medium">
+              Twój email:
+            </label>
+            <input
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-[#9b6f5a]"
+            />
+          </div>
+
+          {/* SUBMIT */}
+          <button
+            type="submit"
+            className="w-full bg-[#9b6f5a] text-white py-3 rounded-xl rounded-xl hover:opacity-90 transition"
+          >
+            Kup bon
+          </button>
+        </form>
+      </div>
+    </section>
+  );
+}

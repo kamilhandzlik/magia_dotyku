@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 
+import VoucherBooking from "../components/Booking/VoucherBooking";
 import Footer from "../components/Footer/Footer";
 
 export default function BonPodarunkowy() {
@@ -71,6 +72,7 @@ export default function BonPodarunkowy() {
         <br />
       </section>
       {/* TODO dodać podobną mechanikę co przy rezerwacji na szkolenie  */}
+      <VoucherBooking />
       <Footer />
     </>
   );
