@@ -80,20 +80,26 @@ export default function Footer() {
 
           {/* LINKI */}
           <div className="space-y-3 text-sm text-center md:text-left">
+            <Link href={"/zasady-funkcjonowania-salonu"}>
+              <p className="hover:text-white cursor-pointer">
+                ZASADY FUNKCJONOWANIA SALONU
+              </p>
+            </Link>
             <Link href="/polityka-prywatnosci">
-            <p className="hover:text-white cursor-pointer">
-              POLITYKA PRYWATNOŚCI
-            </p>
+              <p className="hover:text-white cursor-pointer">
+                POLITYKA PRYWATNOŚCI
+              </p>
             </Link>
             <Link href="/regulamin">
-            <p className="hover:text-white cursor-pointer">REGULAMIN SKLEPU</p>
+              <p className="hover:text-white cursor-pointer">
+                REGULAMIN SKLEPU
+              </p>
             </Link>
             <Link href="/regulamin-swiadczenia-uslug">
-            <p className="hover:text-white cursor-pointer">
-              REGULAMIN ŚWIADCZENIA USŁUG
-            </p>
+              <p className="hover:text-white cursor-pointer">
+                REGULAMIN ŚWIADCZENIA USŁUG
+              </p>
             </Link>
-
 
             <div className="flex items-center gap-2 justify-center md:justify-start pt-4">
               <Image

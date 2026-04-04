@@ -36,10 +36,10 @@ export default function Categories() {
       link: "wirtualny-spacer",
     },
     {
-      title: "Zasady funkcjonowania salonu",
-      img_title: "zasady-funkcjonowania-salonu",
-      image: "/categories/8.png",
-      link: "zasady-funkcjonowania-salonu",
+      title: "Bon podarunkowy",
+      img_title: "bon-podarunkowy",
+      image: "/categories/6.png",
+      link: "bon-podarunkowy",
     },
   ];
 

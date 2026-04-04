@@ -11,14 +11,7 @@ export default function VoucherBooking() {
   const [selectedHour, setSelectedHour] = useState(null);
   const [email, setEmail] = useState("");
 
-  const hours = [
-    "09:00",
-    "10:30",
-    "12:00",
-    "14:00",
-    "16:00",
-    "18:00",
-  ];
+  const hours = ["10:00", "11:00", "12:00", "16:00", "17:00", "18:00"];
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -40,10 +33,13 @@ export default function VoucherBooking() {
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-6 text-gray-600">
-          
           {/* KALENDARZ */}
           <div>
-            <p className="mb-3 font-medium">Wybierz dzień:</p>
+            <p className="mb-3 text-justify font-medium">
+              Zaproponuj odpowiedni dla siebie dzień i godzinę. Otrzymasz w
+              mailu potwrdzenie czy wybrany termin jest dostępny czy zostanie
+              zaproponowany inny dzień w określonej godzinie:
+            </p>
 
             <div className="flex justify-center">
               <DayPicker
@@ -58,9 +54,7 @@ export default function VoucherBooking() {
             {selectedDate && (
               <p className="mt-2 text-center text-sm text-gray-600">
                 Wybrano:{" "}
-                <strong>
-                  {format(selectedDate, "PPP", { locale: pl })}
-                </strong>
+                <strong>{format(selectedDate, "PPP", { locale: pl })}</strong>
               </p>
             )}
           </div>
@@ -90,9 +84,7 @@ export default function VoucherBooking() {
 
           {/* EMAIL */}
           <div>
-            <label className="block mb-2 font-medium">
-              Twój email:
-            </label>
+            <label className="block mb-2 font-medium">Twój email:</label>
             <input
               type="email"
               required
