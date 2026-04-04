@@ -28,7 +28,7 @@ export default function MasazeNaCialo() {
             />
           </div>
 
-          <div className="space-y-6 leading-relaxed">
+          <div className="space-y-6 text-justify leading-relaxed">
             <h2 className="text-4xl font-bold">Masaże na ciało</h2>
 
             <p className="text-xl">
@@ -76,22 +76,22 @@ export default function MasazeNaCialo() {
       </section>
       <section className="relative overflow-hidden py-20 px-6 text-gray-600">
         <div className="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 leading-relaxed">
-            <h2 className="text-4xl font-bold">Masaże na ciało</h2>
+          <div className="space-y-6 text-justify leading-relaxed">
+            <h2 className="text-4xl  font-bold">Masaże na ciało</h2>
 
             <p className="text-xl">
               <span className="text-[#968956] font-semibold">
                 Masaż relaksacyjny
               </span>{" "}
               skupia się on na:
-              <span className="text-[#968956] font-semibold">
-                <li>redukowaniu napięć mięśniowych</li>
-                <li>odprężaniu całego ciała</li>
-                <li>wyeliminowaniu bólu pleców, szyi, karku, barków</li>
-                <li>poprawie krążenia i przepływu limfy</li>
-                <li>wyciszaniu emocjonalnym.</li>
-              </span>
             </p>
+            <span className="text-[#968956] font-semibold">
+              <li>redukowaniu napięć mięśniowych</li>
+              <li>odprężaniu całego ciała</li>
+              <li>wyeliminowaniu bólu pleców, szyi, karku, barków</li>
+              <li>poprawie krążenia i przepływu limfy</li>
+              <li>wyciszaniu emocjonalnym.</li>
+            </span>
             <p>
               Wpływa także na przepływ krwi w organizmie, tempo przemiany
               materii, transport środków odżywczych, oraz aktywizację systemu
