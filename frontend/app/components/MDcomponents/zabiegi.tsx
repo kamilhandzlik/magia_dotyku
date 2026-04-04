@@ -6,7 +6,7 @@ export default function Zabiegi() {
   return (
     <div className="max-w-[650px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
       <div className="w-full max-w-[185px] mx-auto mb-4">
-        <Link href="/#" className="block group">
+        <Link href="/naturoterapia" className="block group">
           <div className="relative h-[20vh] overflow-hidden rounded-full shadow-gray-400 hover:shadow-lg transition-shadow duration-300">
             <Image
               fill
