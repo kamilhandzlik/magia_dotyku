@@ -26,7 +26,7 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = config("ALLOWED_HOSTS").split(" ")
 
 
 REST_FRAMEWORK = {
@@ -42,6 +42,46 @@ REST_FRAMEWORK = {
         "rest_framework.renderers.BaseRenderer",
         "rest_framework.renderers.BrowsableAPIRenderer",
     ],
+}
+CORS_ALLOWED_ORIGINS = [
+    'http://127.0.0.1:8000',
+    'http://127.0.0.1:3000',
+    'http://64.226.81.32',
+    'http://64.226.81.32:1337'
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://127.0.0.1:8000',
+    'http://127.0.0.1:3000',
+    'http://64.226.81.32',
+    'http://64.226.81.32:1337'
+]
+
+CORS_ORIGINS_WHITELIST = [
+    'http://127.0.0.1:8000',
+    'http://127.0.0.1:3000',
+    'http://64.226.81.32',
+    'http://64.226.81.32:1337'
+]
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOW_CREDENTIALS = True
+
+REST_AUTH = {
+    "USE_JWT": True,
+    "JWT_AUTH_HTTPONLY": False
+}
+
+
+SITE_ID = 1
+
+WEBSITE_URL = "http://localhost:8000"
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer',
+    },
 }
 
 # Application definition
@@ -93,10 +133,15 @@ WSGI_APPLICATION = "backend.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": config("SQL_ENGINE"),
+        "NAME": config("SQL_DATABASE"),
+        "USER": config("SQL_USER"),
+        "PASSWORD": config("SQL_PASSWORD"),
+        "HOST": config("SQL_HOST"),
+        "PORT": config("SQL_PORT"),
     }
 }
+
 
 
 # Password validation
@@ -134,6 +179,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = "static/"
+MEDIA_URL = "media/"
+MEDIA_ROOT = BASE_DIR / "media"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
