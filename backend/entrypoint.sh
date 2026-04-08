@@ -1,13 +1,13 @@
 #!/bin/sh
 
-echo "Czekam na bazę danych..."
+echo "Awaiting database..."
 
 while ! nc -z $SQL_HOST $SQL_PORT; do
   sleep 1
 done
 
-echo "Baza wstała 🚀"
+echo "Database is ready"
 
 python manage.py migrate
 
-exec python manage.py runserver 0.0.0.0:8000
+exec python manage.py runserver 0.0.0.0:8080

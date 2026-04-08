@@ -76,6 +76,7 @@ export default function Categories() {
           <CategoryItem key={i} {...category} />
         ))}
       </div>
+      <br />
     </>
   );
 }
