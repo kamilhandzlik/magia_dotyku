@@ -1,4 +1,7 @@
-from django.urls import path, include
+from django.urls import path
+from . import views
 
 
-urlpatterns = []
+urlpatterns = [
+    path("rezerwacja/", views.reserwation, name="rezerwacja"),
+]
