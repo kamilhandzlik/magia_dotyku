@@ -11,6 +11,11 @@ RUN pip install -r requirements.txt
 COPY ./entrypoint.sh .
 RUN sed -i 's/\r$//g' entrypoint.sh
 RUN chmod +x entrypoint.sh
+RUN apt-get update && apt-get install -y \
+    netcat-openbsd \
+    ca-certificates
+
+RUN update-ca-certificates
 
 COPY . .
 

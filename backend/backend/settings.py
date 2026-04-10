@@ -13,6 +13,11 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 from decouple import config
 
+import ssl
+import certifi
+
+ssl._create_default_https_context = ssl.create_default_context(cafile=certifi.where())
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -44,25 +49,12 @@ REST_FRAMEWORK = {
     ],
 }
 CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:8000",
+    "http://127.0.0.1:8080",
     "http://127.0.0.1:3000",
     "http://64.226.81.32",
     "http://64.226.81.32:1337",
 ]
 
-CSRF_TRUSTED_ORIGINS = [
-    "http://127.0.0.1:8000",
-    "http://127.0.0.1:3000",
-    "http://64.226.81.32",
-    "http://64.226.81.32:1337",
-]
-
-CORS_ORIGINS_WHITELIST = [
-    "http://127.0.0.1:8000",
-    "http://127.0.0.1:3000",
-    "http://64.226.81.32",
-    "http://64.226.81.32:1337",
-]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
@@ -92,9 +84,11 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "api",
     "rest_framework",
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
