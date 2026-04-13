@@ -20,43 +20,43 @@ export default function RezerwacjaForm() {
     setForm({ ...form, [name]: value });
   };
 
-const handleSubmit = async (e: any) => {
-  e.preventDefault();
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
 
-  const newErrors: any = {};
+    const newErrors: any = {};
 
-  if (!form.name) newErrors.name = "Podaj imię i nazwisko";
-  if (!form.email) newErrors.email = "Podaj email";
-  if (!form.phone) newErrors.phone = "Podaj telefon";
-  if (!form.training) newErrors.training = "Wybierz szkolenie";
-  if (!form.consent1 || !form.consent2)
-    newErrors.consent = "Zaznacz wszystkie zgody";
+    if (!form.name) newErrors.name = "Podaj imię i nazwisko";
+    if (!form.email) newErrors.email = "Podaj email";
+    if (!form.phone) newErrors.phone = "Podaj telefon";
+    if (!form.training) newErrors.training = "Wybierz szkolenie";
+    if (!form.consent1 || !form.consent2)
+      newErrors.consent = "Zaznacz wszystkie zgody";
 
-  setErrors(newErrors);
+    setErrors(newErrors);
 
-  if (Object.keys(newErrors).length > 0) return;
+    if (Object.keys(newErrors).length > 0) return;
 
-  try {
-    const res = await fetch("http://localhost:8080/api/rezerwacja/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(form),
-    });
+    try {
+      const res = await fetch("http://localhost:8080/api/rezerwacja/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
 
-    const data = await res.json();
+      const data = await res.json();
 
-    console.log("ODPOWIEDŹ Z BACKENDU:", data);
+      console.log("ODPOWIEDŹ Z BACKENDU:", data);
 
-    if (!res.ok) throw new Error(data.error || "Błąd");
+      if (!res.ok) throw new Error(data.error || "Błąd");
 
-    alert("Wysłano ");
-  } catch (err) {
-    console.error(err);
-    alert("Błąd połączenia z backendem ");
-  }
-};
+      alert("Wysłano ");
+    } catch (err) {
+      console.error(err);
+      alert("Błąd połączenia z backendem ");
+    }
+  };
 
   return (
     <section className="bg-[#d6ceca] py-20 px-6">

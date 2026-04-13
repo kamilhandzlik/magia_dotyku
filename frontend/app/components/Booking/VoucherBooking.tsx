@@ -13,16 +13,38 @@ export default function VoucherBooking() {
 
   const hours = ["10:00", "11:00", "12:00", "16:00", "17:00", "18:00"];
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
 
-    const data = {
-      date: selectedDate,
-      hour: selectedHour,
-      email,
-    };
+    if (!selectedDate || !selectedHour) {
+      alert("Wybierz datę i godzinę");
+      return;
+    }
 
-    console.log(data);
+    try {
+      const res = await fetch("http://localhost:8080/api/voucher/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          date: selectedDate,
+          hour: selectedHour,
+          email,
+        }),
+      });
+
+      const data = await res.json();
+
+      console.log("ODPOWIEDŹ:", data);
+
+      if (!res.ok) throw new Error(data.error);
+
+      alert("Voucher wysłany");
+    } catch (err) {
+      console.error(err);
+      alert("Coś poszło nie tak");
+    }
   };
 
   return (

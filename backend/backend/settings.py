@@ -184,8 +184,3 @@ EMAIL_USE_SSL = False
 
 EMAIL_HOST_USER = config("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
-
-
-# import ssl
-
-# EMAIL_SSL_CONTEXT = ssl.create_default_context()
