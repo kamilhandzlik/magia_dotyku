@@ -10,7 +10,8 @@ export default function VoucherBooking() {
   const [selectedDate, setSelectedDate] = useState();
   const [selectedHour, setSelectedHour] = useState(null);
   const [email, setEmail] = useState("");
-
+  const [nameBuyer, setNameBuyer] = useState("");
+  const [nameRecipient, setNameRecipient] = useState("");
   const hours = ["10:00", "11:00", "12:00", "16:00", "17:00", "18:00"];
 
   const handleSubmit = async (e: any) => {
@@ -18,6 +19,17 @@ export default function VoucherBooking() {
 
     if (!selectedDate || !selectedHour) {
       alert("Wybierz datę i godzinę");
+      return;
+    }
+
+    if (
+      !selectedDate ||
+      !selectedHour ||
+      !email ||
+      !nameBuyer ||
+      !nameRecipient
+    ) {
+      alert("Uzupełnij wszystkie pola");
       return;
     }
 
@@ -30,7 +42,9 @@ export default function VoucherBooking() {
         body: JSON.stringify({
           date: selectedDate,
           hour: selectedHour,
-          email,
+          email: email,
+          nameBuyer: nameBuyer,
+          nameRecipient: nameRecipient,
         }),
       });
 
@@ -112,6 +126,26 @@ export default function VoucherBooking() {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              className="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-[#9b6f5a]"
+            />
+            <label className="block mb-2 font-medium">
+              Imię i nazwisko osoby kupującej bon:
+            </label>
+            <input
+              type="text"
+              required
+              value={nameBuyer}
+              onChange={(e) => setNameBuyer(e.target.value)}
+              className="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-[#9b6f5a]"
+            />
+            <label className="block mb-2 font-medium">
+              Imię i nazwisko osoby otrzymującej bon:
+            </label>
+            <input
+              type="text"
+              required
+              value={nameRecipient}
+              onChange={(e) => setNameRecipient(e.target.value)}
               className="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-[#9b6f5a]"
             />
           </div>

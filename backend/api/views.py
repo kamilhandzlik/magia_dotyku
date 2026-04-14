@@ -24,16 +24,16 @@ def reserwation(request):
             training = data.get("training")
             message = data.get("message")
 
-            # ✅ Walidacja
+            #  Walidacja
             if not all([name, email, phone, training]):
                 return JsonResponse({"error": "Brak wymaganych danych"}, status=400)
 
             # =========================
-            # 📩 EMAIL DO KLIENTA
+            #  EMAIL DO KLIENTA
             # =========================
 
             html_client = render_to_string(
-                "api/emails/reservation_client.html",  # 👈 dostosuj nazwę appki!
+                "api/emails/reservation_client.html",
                 {
                     "name": name,
                     "training": training,
@@ -112,40 +112,75 @@ def voucher(request):
             date = data.get("date")
             hour = data.get("hour")
             email = data.get("email")
+            nameBuyer = data.get("nameBuyer")
+            nameRecipient = data.get("nameRecipient")
 
             formatted_date = datetime.fromisoformat(date).strftime("%d-%m-%Y")
+
             # Validation
-            if not all([date, hour, email]):
+            if not all([date, hour, email, nameBuyer, nameRecipient]):
                 return JsonResponse({"error": "Brak wymaganych danych"}, status=400)
 
-            # email do kilenta (zamawiającego)
-            send_mail(
-                subject="Potwierdzenie zapisu",
-                message=f"""
+            # =========================
+            #  EMAIL DO KLIENTA
+            # =========================
+            html_client = render_to_string(
+                "api/emails/voucher_client.html",
+                {
+                    "date": formatted_date,
+                    "hour": hour,
+                    "email": email,
+                },
+            )
+
+            text_client = f"""
 Dziękujemy za zakup bonu podarunkowego
 
 Zaproponowany termin:
  {formatted_date} o godzinie {hour}
 
 Skontaktujemy się z Tobą w celu potwierdzenia.
-""",
+"""
+            email_client = EmailMultiAlternatives(
+                subject="Potwierdzenie zapisu",
+                body=text_client,
                 from_email=config("EMAIL_HOST_USER"),
-                recipient_list=[email],
+                to=[email],
+            )
+            email_client.attach_alternative(html_client, "text/html")
+            email_client.send()
+            # =========================
+            # 📩 EMAIL DO WŁAŚCICIELA
+            # =========================
+
+            html_owner = render_to_string(
+                "api/emails/voucher_owner.html",
+                {
+                    "date": formatted_date,
+                    "hour": hour,
+                    "email": email,
+                    "nameBuyer": nameBuyer,
+                    "nameRecipient": nameRecipient,
+                },
             )
 
-            # email do właściciela
-            send_mail(
-                subject="Nowy voucher",
-                message=f"""
+            text_owner = f"""
 Nowy voucher:
 
 Email: {email}
 Data: {formatted_date}
 Godzina: {hour}
-""",
+Imię kupującego: {nameBuyer}
+Imię obdarowanego: {nameRecipient}
+"""
+            email_owner = EmailMultiAlternatives(
+                subject="Nowy voucher",
+                body=text_owner,
                 from_email=config("EMAIL_HOST_USER"),
-                recipient_list=[config("EMAIL_HOST_USER")],
+                to=[config("EMAIL_HOST_USER")],
             )
+            email_owner.attach_alternative(html_owner, "text/html")
+            email_owner.send()
 
             return JsonResponse({"status": "success"})
 
