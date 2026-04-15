@@ -80,8 +80,9 @@ export default function Szkolenia() {
         </div>
       </section>
 
-      <div className="max-w-[1100px] mx-auto py-20 px-6">
+      <div className="max-w-[1100px] mx-auto space-y-20 py-20 px-6">
         <SzkoleniaItems />
+
         <Terminy />
         <RezerwacjaForm />
       </div>

@@ -10,7 +10,9 @@ import json
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
 from decouple import config
-
+from rest_framework import generics
+from .models import Events
+from .serializers import EventsSerializer
 
 @csrf_exempt
 def reserwation(request):
@@ -188,3 +190,9 @@ Imię obdarowanego: {nameRecipient}
             return JsonResponse({"error": str(e)}, status=500)
 
     return JsonResponse({"error": "Zła metoda"}, status=405)
+
+
+
+class EventsListView(generics.ListAPIView):
+    queryset = Events.objects.all().order_by("start_date")
+    serializer_class = EventsSerializer
