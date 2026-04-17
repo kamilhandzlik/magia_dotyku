@@ -11,8 +11,14 @@ from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
 from decouple import config
 from rest_framework import generics
-from .models import Events
-from .serializers import EventsSerializer
+from .models import Event, Training
+from .serializers import (
+    EventsSerializer,
+    TrainingDetailSerializer,
+    TrainingListSerializer,
+)
+from rest_framework.generics import RetrieveAPIView
+
 
 @csrf_exempt
 def reserwation(request):
@@ -192,7 +198,17 @@ Imię obdarowanego: {nameRecipient}
     return JsonResponse({"error": "Zła metoda"}, status=405)
 
 
-
 class EventsListView(generics.ListAPIView):
-    queryset = Events.objects.all().order_by("start_date")
+    queryset = Event.objects.all().order_by("start_date")
     serializer_class = EventsSerializer
+
+
+class TrainingDetailView(RetrieveAPIView):
+    queryset = Training.objects.all()
+    serializer_class = TrainingDetailSerializer
+    lookup_field = "slug"
+
+
+class TrainingListView(generics.ListAPIView):
+    queryset = Training.objects.all()
+    serializer_class = TrainingListSerializer
