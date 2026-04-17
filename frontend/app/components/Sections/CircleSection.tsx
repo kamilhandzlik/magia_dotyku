@@ -24,7 +24,7 @@ export default function CircleSection({
       `}
       >
         {/* Obraz */}
-        <div className="w-[240px] h-[240px] relative flex-shrink-0">
+        <div className="w-[350px] h-[350px] relative flex-shrink-0">
           <Image
             src={image}
             alt={title}
