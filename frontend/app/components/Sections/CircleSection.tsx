@@ -24,7 +24,7 @@ export default function CircleSection({
       `}
       >
         {/* Obraz */}
-        <div className="w-[350px] h-[350px] relative flex-shrink-0">
+        <div className="w-[500px] h-[500px] relative flex-shrink-0">
           <img
             src={image}
             alt={title}
@@ -34,8 +34,10 @@ export default function CircleSection({
 
         {/* Tekst */}
         <div className="max-w-md text-center md:text-left">
-          <h3 className="text-xl text-[#968956] font-semibold mb-2">{title}</h3>
-          <p className="text-gray-600">{description}</p>
+          <h3 className="text-3xl text-[#968956] font-semibold mb-2">
+            {title}
+          </h3>
+          <p className="text-gray-600 text-xl">{description}</p>
         </div>
       </div>
     </div>

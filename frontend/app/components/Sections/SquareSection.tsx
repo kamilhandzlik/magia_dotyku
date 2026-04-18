@@ -15,7 +15,7 @@ export default function SquareSection({ title, description, image }: Props) {
       <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-amber-500/10 blur-[120px] rounded-full -z-10" />
 
       <div className="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div className="relative group overflow-hidden rounded-2xl">
+        <div className="relative w-[500px] h-[600px] group overflow-hidden rounded-2xl">
           <img
             src={image}
             alt={title}
@@ -24,8 +24,8 @@ export default function SquareSection({ title, description, image }: Props) {
         </div>
 
         <div className="space-y-6 leading-relaxed text-lg">
-          <h2 className="text-4xl font-bold">{title}</h2>
-          <p className="text-gray-600">{description}</p>
+          <h2 className="text-5xl text-[#968956] font-bold">{title}</h2>
+          <p className="text-gray-600 text-xl">{description}</p>
         </div>
       </div>
     </section>

@@ -14,7 +14,10 @@ function fixImageUrls(data: any) {
 
   return {
     ...data,
-    sq_sections: data.sq_sections.map((s: any) => ({ ...s, image: fix(s.image) })),
+    sq_sections: data.sq_sections.map((s: any) => ({
+      ...s,
+      image: fix(s.image),
+    })),
     sections: data.sections.map((s: any) => ({ ...s, image: fix(s.image) })),
     gallery: data.gallery.map((g: any) => ({ ...g, image: fix(g.image) })),
   };
@@ -42,29 +45,22 @@ export default async function TrainingPage({ params }: Props) {
   const data = await getTraining(slug);
 
   return (
-    <>
+    <div className="w-full">
       <h1 className="text-4xl text-center py-10">{data.title}</h1>
-
       <section>
         {data.sq_sections.map((item: any) => (
           <SquareSection key={item.id} {...item} />
         ))}
       </section>
-
       <section>
         {data.sections.map((item: any, index: number) => (
-          <CircleSection
-            key={item.id}
-            {...item}
-            reverse={index % 2 !== 0}
-          />
+          <CircleSection key={item.id} {...item} reverse={index % 2 !== 0} />
         ))}
       </section>
-
-      <section>
+      <section className="w-full">
         <GallerySection items={data.gallery} />
       </section>
       <Footer />
-    </>
+    </div>
   );
 }
