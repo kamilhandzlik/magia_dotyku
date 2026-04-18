@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Event, Training, SquareSection, CircleSection, GalleryItem
+from .models import Event, Training, SquareSection, CircleSection, GalleryItem, HeroSection
 
 
 @admin.register(Event)
@@ -12,3 +12,4 @@ admin.site.register(Training)
 admin.site.register(SquareSection)
 admin.site.register(CircleSection)
 admin.site.register(GalleryItem)
+admin.site.register(HeroSection)

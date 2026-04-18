@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Event, Training, SquareSection, CircleSection, GalleryItem
+from .models import Event, HeroSection, Training, SquareSection, CircleSection, GalleryItem
 
 
 class EventsSerializer(serializers.ModelSerializer):
@@ -25,10 +25,16 @@ class GalleryItemSerializer(serializers.ModelSerializer):
         model = GalleryItem
         fields = "__all__"
 
+class HeroSectionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = HeroSection
+        fields = "__all__"
+
 
 class TrainingDetailSerializer(serializers.ModelSerializer):
     sq_sections = SquareSectionSerializer(many=True)
     sections = CircleSectionSerializer(many=True)
+    hero = HeroSectionSerializer(read_only=True)
     gallery = GalleryItemSerializer(many=True)
     preview = serializers.SerializerMethodField()
 
@@ -42,6 +48,7 @@ class TrainingDetailSerializer(serializers.ModelSerializer):
             "sq_sections",
             "sections",
             "gallery",
+            "hero",
         ]
 
     def get_preview(self, obj):

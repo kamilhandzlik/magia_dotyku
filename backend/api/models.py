@@ -52,3 +52,13 @@ class GalleryItem(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class HeroSection(models.Model):
+    training = models.OneToOneField(Training, on_delete=models.CASCADE, related_name="hero", null=True, blank=True)
+    title = models.CharField(max_length=255)
+    description = models.TextField()
+    image = models.ImageField(upload_to="hero/")
+
+    def __str__(self):
+        return self.title
