@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function RezerwacjaForm() {
   const [form, setForm] = useState({
@@ -175,6 +175,16 @@ function Input({ label, name, value, onChange, error }: any) {
 }
 
 function Select({ label, name, value, onChange, error }: any) {
+  const [trainings, setTrainings] = useState<{ id: number; title: string }[]>(
+    [],
+  );
+
+  useEffect(() => {
+    fetch("http://localhost:8080/api/trainings/")
+      .then((res) => res.json())
+      .then((data) => setTrainings(data));
+  }, []);
+
   return (
     <div>
       <label className="block text-sm mb-2 text-gray-700">{label}</label>
@@ -187,8 +197,11 @@ function Select({ label, name, value, onChange, error }: any) {
         }`}
       >
         <option value="">Wybierz...</option>
-        <option value="Access Bars">Access Bars</option>
-        <option value="Szkolenie 1">Szkolenie 1</option>
+        {trainings.map((t) => (
+          <option key={t.id} value={t.title}>
+            {t.title}
+          </option>
+        ))}
       </select>
       {error && <p className="text-red-500 text-sm">{error}</p>}
     </div>

@@ -1,29 +1,19 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import HeroMd from "../components/Hero/HeroMd";
 import Footer from "../components/Footer/Footer";
+import Link from "next/link";
 
-const szkolenia = [
-  {
-    id: 1,
-    nazwa: "Szkolenie przykładowe 1",
-    opis: "Krótki opis szkolenia, czego można się nauczyć i dla kogo jest przeznaczone.",
-    obrazek: "pictures/IMG_1.png",
-    link: "#",
-  },
-  {
-    id: 2,
-    nazwa: "Szkolenie przykładowe 2",
-    opis: "Krótki opis szkolenia, czego można się nauczyć i dla kogo jest przeznaczone.",
-    obrazek: "pictures/IMG_1.png",
-    link: "#",
-  },
-  {
-    id: 3,
-    nazwa: "Szkolenie przykładowe 3",
-    opis: "Krótki opis szkolenia, czego można się nauczyć i dla kogo jest przeznaczone.",
-    obrazek: "pictures/IMG_1.png",
-    link: "#",
-  },
-];
+type Training = {
+  id: number;
+  title: string;
+  slug: string;
+  preview: {
+    image: string;
+    description: string;
+  } | null;
+};
 
 const pdfPozycje = [
   { tytul: "Programy szkoleń" },
@@ -32,28 +22,38 @@ const pdfPozycje = [
 ];
 
 function ListaSzkolen() {
+  const [trainings, setTrainings] = useState<Training[]>([]);
+
+  useEffect(() => {
+    fetch("http://localhost:8080/api/trainings/")
+      .then((res) => res.json())
+      .then((data) => setTrainings(data));
+  }, []);
+
   return (
     <section className="py-12">
       <h2 className="text-3xl font-bold mb-8">Lista Szkoleń</h2>
       <div className="flex flex-col gap-4">
-        {szkolenia.map((item) => (
-          <a
+        {trainings.map((item) => (
+          <Link
             key={item.id}
-            href={item.link}
+            href={`/trainings/${item.slug}`}
             className="flex items-center gap-5 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
           >
             <img
-              src={item.obrazek}
-              alt={item.nazwa}
+              src={item.preview?.image ?? ""}
+              alt={item.title}
               className="w-40 h-40 object-cover rounded-md flex-shrink-0"
             />
             <div>
               <p className="text-3xl font-semibold text-gray-800">
-                {item.nazwa}
+                {item.title}
               </p>
-              <p className="text-xl text-gray-500 mt-1">{item.opis}</p>
+              <p className="text-xl text-gray-500 mt-1">
+                {item.preview?.description ?? ""}
+              </p>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </section>
@@ -105,6 +105,7 @@ export default function SzkoleniaLista() {
       />
       <div className="max-w-5xl mx-auto px-6 py-20">
         <ListaSzkolen />
+        {/* <TabelkaPDF /> */}
       </div>
       <Footer />
     </>

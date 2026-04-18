@@ -3,6 +3,7 @@ import CircleSection from "@/app/components/Sections/CircleSection";
 import GallerySection from "@/app/components/Sections/GallerySection";
 import HeroMd2 from "@/app/components/Hero/HeroMD2";
 import Footer from "@/app/components/Footer/Footer";
+import RezerwacjaForm from "@/app/components/szkolenia/Formularz";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -69,7 +70,9 @@ export default async function TrainingPage({ params }: Props) {
       <section className="w-full py-20">
         <GallerySection items={data.gallery} />
       </section>
-
+      <div className="max-w-[1100px] mx-auto space-y-20 py-20 px-6">
+        <RezerwacjaForm />
+      </div>
       <Footer />
     </div>
   );
