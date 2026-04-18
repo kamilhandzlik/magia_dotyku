@@ -16,11 +16,9 @@ export default function SquareSection({ title, description, image }: Props) {
 
       <div className="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div className="relative group overflow-hidden rounded-2xl">
-          <Image
+          <img
             src={image}
             alt={title}
-            width={500}
-            height={600}
             className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
           />
         </div>

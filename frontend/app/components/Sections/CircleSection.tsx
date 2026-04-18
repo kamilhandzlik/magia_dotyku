@@ -25,11 +25,10 @@ export default function CircleSection({
       >
         {/* Obraz */}
         <div className="w-[350px] h-[350px] relative flex-shrink-0">
-          <Image
+          <img
             src={image}
             alt={title}
-            fill
-            className="rounded-full object-cover"
+            className="rounded-full object-cover w-full h-full"
           />
         </div>
 
