@@ -53,12 +53,14 @@ class TrainingDetailSerializer(serializers.ModelSerializer):
 
     def get_preview(self, obj):
         first_section = obj.sections.first()
-
         if not first_section:
             return None
-
+    
+        request = self.context.get("request")
+        image_url = request.build_absolute_uri(first_section.image.url) if request else first_section.image.url
+    
         return {
-            "image": first_section.image.url,
+            "image": image_url,
             "description": first_section.description[:120],
         }
 
@@ -75,7 +77,10 @@ class TrainingListSerializer(serializers.ModelSerializer):
         if not first:
             return None
 
+        request = self.context.get("request")
+        image_url = request.build_absolute_uri(first.image.url) if request else first.image.url
+
         return {
-            "image": first.image.url,
+            "image": image_url,
             "description": first.description[:120],
         }
