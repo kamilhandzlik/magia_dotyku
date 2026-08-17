@@ -47,12 +47,11 @@ export default function HeroMain() {
         style={{ opacity }}
       >
         <h1 className="text-5xl md:text-7xl font-light mb-6">
-          W drodze do siebie
+          Droga świadomej zmiany
         </h1>
 
         <p className="text-lg leading-relaxed max-w-xl">
-          Czy masz świadomość potęgi mocy, którą posiadasz? Zmieniając swój stan
-          wewnętrzny, zmieniasz swój świat zewnętrzny.
+          Najlepszą metodą przewidywania przyszłości jest jej tworzenie
         </p>
       </div>
     </section>

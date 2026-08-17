@@ -12,10 +12,10 @@ export default function Footer() {
           {/* LEWA - LOGO */}
           <div className="flex justify-center md:justify-start">
             <Image
-              src="/stopka/stopka-lisc.jpg"
+              src="/logo/logo_5.png" 
               alt="stopka-lisc"
-              width={180}
-              height={180}
+              width={250}
+              height={250}
               className="opacity-90 hover:opacity-100 transition"
             />
           </div>
@@ -101,15 +101,7 @@ export default function Footer() {
               </p>
             </Link>
 
-            <div className="flex items-center gap-2 justify-center md:justify-start pt-4">
-              <Image
-                src="/stopka/stopka-right-1.png"
-                alt="logo"
-                width={40}
-                height={40}
-              />
-              <span className="text-sm">STREFA SPA I RELAKSU</span>
-            </div>
+            
           </div>
         </div>
 

@@ -20,7 +20,7 @@ export default function PoznajmySie() {
         <div className="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="relative group overflow-hidden rounded-2xl">
             <Image
-              src="/pictures/IMG_3.png"
+              src="/pictures/IMG_5.jpeg"
               alt="szczkolenia"
               width={500}
               height={600}
@@ -36,85 +36,146 @@ export default function PoznajmySie() {
               <span className="text-[#968956] font-semibold">
                 Ola Burczyńska
               </span>{" "}
-              i witam Cię serdecznie
+              i witam Cię serdecznie na mojej stronie
             </p>
 
-            <p>
+            <p className="text-xl">
               Zapraszam Cię do wspólnej podróży po{" "}
               <span className="text-[#968956] font-semibold">
                 Radosnej Stronie Życia
               </span>
-              , gdzie harmonijnie łączymy DUSZĘ – CIAŁO – UMYSŁ.
-            </p>
-
-            <p>
-              Moją ideą stworzenia tej przestrzeni jest miejsce pełne{" "}
-              <span className="text-[#968956]">
-                spokoju, empatii i zrozumienia
+              , gdzie{" "}
+              <span className="text-[#968956] font-semibold">
+                harmonijnie łączymy DUSZĘ – CIAŁO – UMYSŁ
               </span>
-              , które pomaga odkryć Twoją wewnętrzną siłę.
+            </p>
+            <p className="text-xl">
+              Przestrzeń jaką tworzę w Magii Dotyku Strefy Spa i Relaxu to nie
+              tylko praca z ciałem manualnie. Choć ma to duże znaczenia to
+              jednak bez posłuchania czego ciało potrzebuje nie z umysłu lecz z
+              potrzeby znaczenie w jednym miejscu jest utworzenie PRZESTRZENI
+              gdzie zrozumienie, spokój i empatia jaką się dzielę dodały Wam
+              więcej pewności siebie, odkrycia mocy i energii jaka w Was
+              drzemie.{" "}
+            </p>
+            <div className="max-w-[900px] mx-auto mt-20 space-y-5 text-center">
+              <h3 className="text-2xl font-semibold text-[#968956]">Bo…</h3>
+
+              <div className="space-y-4 text-lg">
+                <p>Jak często o SOBIE myślisz?</p>
+                <p>Ile dajesz SOBIE, zanim dasz innym?</p>
+                <p>Ile razy światu mówisz TAK, kiedy SOBIE mówisz NIE?</p>
+                <p>Czy to, co robisz dla siebie – naprawdę Ci wystarcza?</p>
+              </div>
+              <div className="space-y-5">
+                <p className="text-xl">A może zacznij…</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-[800px] mx-auto mt-20 space-y-6 text-center text-xl">
+          <p className="text-2xl font-semibold text-[#968956]">
+            SIEBIE traktować jak najlepszą przyjaciółkę, kogoś kogo kochasz,
+            żeby czuł się dobrze.
+          </p>
+
+          <p>Dotrzymuj sobie danego słowa.</p>
+          <p>
+            Bądź tam gdzie chciałabyś być – jakbyś umówiła się z przyjaciółką.
+          </p>
+          <p>Rób to co sobie zaplanowałaś.</p>
+          <p>Jeśli UWAŻASZ, że to samolubne – TRUDNO wytrzymaj.</p>
+          <p>
+            Postaw SIEBIE na pierwszym miejscu i przetrwaj, chociażby
+            <span className="text-[#968956] font-semibold">
+              {" "}
+              TRZY MIESIĄCE i ZOBACZ, KIM BĘDZIESZ
+            </span>
+          </p>
+        </div>
+
+        <div className="max-w-[900px] mx-auto mt-20 text-xl space-y-6">
+          <p>
+            Wiem, że to trudne dlatego ZAPRASZAM serdecznie każdego, kto pragnie
+            oderwać się od zgiełku codzienności, odkryć wrażliwość na swoje
+            piękno, a co najważniejsze CIEBIE pragnącej/go żyć z SOBĄ w zgodzie
+            do mojej holistycznej przestrzeni po RADOSNEJ STRONY ŻYCIA.
+          </p>
+          <div className="max-w-[900px] mx-auto mt-20 text-xl space-y-6">
+            <p className="text-bold text-3xl text-center">
+              O TWOJEJ WARTOŚCI świadczy czas, jaki SOBIE dajesz.
             </p>
           </div>
+          <p>
+            Otrzymasz tu możliwość
+            <span className="text-[#968956] font-semibold">
+              {" "}
+              pracy z SOBĄ
+            </span>{" "}
+            podczas
+            <span className="text-[#968956] font-semibold">
+              {" "}
+              spotkań na sesjach i zabiegach indywidulanych,
+            </span>{" "}
+            a także w niewielkich
+            <span className="text-[#968956] font-semibold">
+              {" "}
+              grupach gdzie pracujemy nad duszą ciałem, i umysłem
+            </span>{" "}
+            ( masaże, sesje access bars, warsztaty oddechowe, joga twarzy,
+            spotkania rozwojowe i nie tylko)
+          </p>
+          <p>
+            O TWOJEJ WARTOŚCI świadczy czas, jaki SOBIE dajesz i wysiłek jaki
+            wkładasz w SWÓJ ROZWÓJ i ROZKWIT.
+          </p>
         </div>
-
-        <div className="max-w-[800px] mx-auto mt-20 space-y-6 text-center">
-          <h3 className="text-2xl font-semibold text-[#968956]">
-            Zatrzymaj się na chwilę…
-          </h3>
-
-          <div className="space-y-3 text-lg">
-            <p>Jak często o SOBIE myślisz?</p>
-            <p>Ile dajesz SOBIE, zanim dasz innym?</p>
-            <p>Ile razy światu mówisz TAK, kiedy SOBIE mówisz NIE?</p>
-            <p>Czy to, co robisz dla siebie – naprawdę Ci wystarcza?</p>
-          </div>
-        </div>
-
-        <div className="max-w-[900px] mx-auto mt-20 space-y-6 text-center">
-          <p className="text-xl">A może zacznij…</p>
-
+        <div className="max-w-[800px] mx-auto mt-20 space-y-6 text-center text-xl">
+          <p>
+            Nie chcę Cię przekonywać, że trzeba dbać o siebie, chcę Cię
+            zainspirować, że
+          </p>
           <p className="text-2xl font-semibold text-[#968956]">
-            traktować siebie jak najlepszą przyjaciółkę
+            WARTO to robić dla SIEBIE
           </p>
-
-          <p>
-            Bądź tam, gdzie chciałabyś być. Rób to, co sobie zaplanowałaś.
-            Dotrzymuj sobie danego słowa.
-          </p>
-
-          <p className="text-lg">
-            Postaw siebie na pierwszym miejscu… choćby na{" "}
-            <span className="text-[#968956] font-semibold">3 miesiące</span>.
-          </p>
-
-          <p className="text-2xl font-bold">I zobacz, kim się staniesz </p>
         </div>
-
-        <div className="max-w-[900px] mx-auto mt-20 text-center space-y-6">
+        <div className="max-w-[900px] mx-auto mt-20 text-xl space-y-6">
           <p>
-            Zapraszam Cię do mojej holistycznej przestrzeni, gdzie możesz
-            pracować z ciałem, duszą i umysłem – indywidualnie lub w kameralnych
-            grupach.
+            bo największym PREZENTEM jaki możesz sobie OFIAROWAĆ to SŁUCHAĆ TEGO
+            co potrzebuje twoje ciało, bo twoja dusza, energia, intuicja podsyła
+            nieustanne sygnały, wystarczy NAUCZYĆ się ich słuchać i podążać za
+            nim. A życie STANIE się CUDOWNĄ PODRÓŻĄ, PRZYGODĄ do ODKRYCIA.
           </p>
-
-          <p className="text-xl">
-            O TWOJEJ WARTOŚCI świadczy czas, jaki SOBIE dajesz.
-          </p>
-
-          <p className="text-2xl font-semibold text-[#968956]">
-            WARTO robić to dla siebie
-          </p>
-
+        </div>
+        <div className="max-w-[800px] mx-auto mt-20 space-y-6 text-center text-xl">
+          <p>Życząc Ci cudowności na każdy moment życia</p>
+          <p>i zapraszam do wspólnej podróży </p>
+          <p>Ola Burczyńska</p>
+        </div>
+        <div className="max-w-[900px] mx-auto mt-20 text-xl space-y-6">
           <p>
-            Bo największym prezentem, jaki możesz sobie dać, jest słuchanie
-            siebie.
+            jak widzisz strona jest obszerna, bo nasze życie też takie jest
+            dlatego
+            <span className="text-[#968956] font-semibold">
+              {" "}
+              na początku znajdź tu dla siebie swój obszar
+            </span>
+            , który
+            <span className="text-[#968956] font-semibold">
+              {" "}
+              STANIE SIĘ TWOIM POCZĄTKIEM ZMIANY
+            </span>
+            , by z czasem poszerzać go by ZOBACZYĆ, że dbając o 3 przestrzenie
+            znajduje się w sobie więcej spokoju, radości życia z dużą dozą
+            uważności dla siebie.
           </p>
-
-          <p className="italic mt-10">
-            Życząc Ci cudowności na każdy moment życia
+          <p>
+            ŻYCIE to PODRÓŻ, dlatego spodziewaj się wielu zmian na stronie, gdyż
+            życie wokół się zmienia i ja nieustannie za Tą zmianą podążam do
+            czego i Ciebie serdecznie zapraszam.
           </p>
-
-          <p className="font-semibold">Ola Burczyńska</p>
+          <p>Wówczas życie jest przygodą i nieustanną podrożą.</p>
         </div>
       </section>
       <Footer />
