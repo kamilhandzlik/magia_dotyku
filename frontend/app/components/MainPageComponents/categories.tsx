@@ -8,7 +8,7 @@ export default function Categories() {
     {
       title: "Poznajmy się",
       img_title: "poznajmy-się",
-      image: "/categories/1.png",
+      image: "/pictures/IMG_6.jpeg",
       link: "poznajmy-sie",
     },
     {
